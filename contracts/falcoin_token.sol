@@ -1,13 +1,13 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// 'WNT' token contract
+// 'FLC' token contract
 //
 // Deployed to : 0x404e3Ed6fd3FfAAE8a1702b20F71Cb9C26Ce3Ec8
-// Symbol      : WNT
-// Name        : WinToken
+// Symbol      : FLC
+// Name        : Falcoin Token
 // Total supply: 100000000
-// Decimals    : 18
+// Decimals    : 10
 //
 // Enjoy.
 //
@@ -113,9 +113,9 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     function FucksToken() public {
-        symbol = "WNT";
-        name = "WinToken";
-        decimals = 18;
+        symbol = "FLC";
+        name = "Falcoin Token";
+        decimals = 10;
         _totalSupply = 100000000;
         balances[0x404e3Ed6fd3FfAAE8a1702b20F71Cb9C26Ce3Ec8] = _totalSupply;
         Transfer(address(0), 0x404e3Ed6fd3FfAAE8a1702b20F71Cb9C26Ce3Ec8, _totalSupply);
